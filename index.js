@@ -28,19 +28,35 @@ function login(reqUsername, reqPassword)
 }
 
 
-//function login(reqUsername, reqPassword){
-//    let matchUser = dbUsers.find(
-//        x => x.username == reqUsername
-//    )
-//    if (!matchUser) return "User Not Found!"
-//    if (matchUser.password == reqPassword)
-//    {
-//        return matchUser
-//    }else
-//   {
-//        return "Invalid Password"
-//    }
-//}
+function login(reqUsername, reqPassword){
+    let matchUser = dbUsers.find(
+        x => x.username == reqUsername
+    )
+    if (!matchUser) return "User Not Found!"
+    if (matchUser.password == reqPassword)
+    {
+        return matchUser
+    }else
+   {
+        return "Invalid Password"
+    }
+}
+
+
+    function register(a, b, c, d) {
+        dbUsers.push({
+            username: a,
+            password: b,
+            name: c,
+            email: d
+        })
+}
+
 
 //try login
-login("mael","456")
+console.log(login("amsyar","123"))             //cout
+console.log(login("meon","98765"))
+console.log(login("utem","password"))
+
+register("Hawari","4563","Wari","Hawari@gmail.com")
+console.log(login("Hawari","4563"))
