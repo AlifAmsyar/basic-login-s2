@@ -58,5 +58,5 @@ console.log(login("amsyar","123"))             //cout
 console.log(login("meon","98765"))
 console.log(login("utem","password"))
 
-register("Hawari","4563","Wari","Hawari@gmail.com")
-console.log(login("Hawari","4563"))
+register("Susi","4312","Wari","susi@gmail.com")
+console.log(login("susi","4312"))
